@@ -3,17 +3,26 @@
   "version": "1.0.0",
   "scripts": {
     "generate": "yarn codegen",
-    "start": "graphql-codegen --config ./codegen.ts --watch",
-    "codegen": "graphql-codegen --config ./codegen.ts"
+    "codegen": "graphql-codegen --config ./codegen.ts",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
-    "@graphql-codegen/add": "3.2.1",
-    "@graphql-codegen/cli": "2.13.7",
-    "@graphql-codegen/typescript": "2.8.0",
-    "@graphql-codegen/typescript-operations": "2.5.5",
-    "graphql": "^16.2.0"
+    "@apollo/client": "^3.7.14",
+    "@graphql-codegen/add": "4.0.1",
+    "@graphql-codegen/cli": "3.3.1",
+    "@graphql-codegen/client-preset": "^3.0.1",
+    "@graphql-codegen/client-preset-swc-plugin": "^0.2.0",
+    "@graphql-codegen/typescript": "3.0.4",
+    "@graphql-codegen/typescript-operations": "3.0.4",
+    "@types/react": "^18.2.6",
+    "graphql": "^16.6.0",
+    "next": "^13.4.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "typescript": "^4.8.4"
+    "typescript": "^5.0.4"
   }
 }
